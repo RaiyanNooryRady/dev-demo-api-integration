@@ -6,8 +6,7 @@ import { Company } from "@/types/companies";
 import CompaniesSkeleton from "@/components/skeletons/CompaniesSkeleton";
 export default function CompaniesPage() {
     const { data: companiesData, isLoading, error } = useCompanies();
-    if (isLoading) return <CompaniesSkeleton />;
-    if (error) return <div>Error: {error.message}</div>;
+    if (isLoading || error) return <CompaniesSkeleton />;
     return (
 
         <div className="container mx-auto">
