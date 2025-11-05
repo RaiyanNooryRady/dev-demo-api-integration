@@ -13,8 +13,8 @@ export default function CompaniesPage() {
 
             <h1 className="text-2xl font-bold text-center my-4">Companies</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {companiesData?.map((company: Company) => (
-                    <Card key={company.id}>
+                {companiesData?.map((company: Company, index) => (
+                    <Card key={index}>
                         <CardHeader>
                             <CardTitle>{company.name}</CardTitle>
                             <CardDescription>{company.industry}</CardDescription>
