@@ -9,6 +9,7 @@ export default function Navbar() {
     <nav className="flex justify-center items-center p-4 bg-gray-800 text-white gap-4">
         <Link href="/" className={pathname==="/"?"border-b-2 border-white":""}>Home</Link>
         <Link href="/companies" className={pathname==="/companies"?"border-b-2 border-white":""}>Companies</Link>
+        <Link href="/uptime-monitoring" className={pathname==="/uptime-monitoring"?"border-b-2 border-white":""}>Uptime Monitoring</Link>
     </nav>
   )
 }
